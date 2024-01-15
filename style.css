@@ -1,0 +1,118 @@
+body {
+    background-color: aliceblue;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+header {
+    margin: 10px auto;
+    padding: 5px;
+    width: 100%;
+    border: 2px solid green;
+    background-color: darkgreen;
+    text-align: center;
+    color: snow;
+}
+
+section {
+    margin: 10px auto;
+}
+
+.container-elementos {
+    display: flex;
+    justify-content: center;
+    max-width: auto;
+    max-height: 500px;
+}
+
+.dado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: snow;
+    width: 30px;
+    height: 300px;
+}
+
+.dado-00 { background-color: green; order: 0; }
+.dado-01 { background-color: blue; order: 1;}
+.dado-02 { background-color: red; order: 2; }
+.dado-03 { background-color: violet; order: 3;}
+.dado-04 { background-color: darkgoldenrod; order: 4; }
+.dado-05 { background-color: darkviolet; order: 5; }
+.dado-06 { background-color: darkblue; order: 6;}
+.dado-07 { background-color: darkorange; order: 7;}
+.dado-08 { background-color: darkred; order: 8; }
+.dado-09 { background-color: darkslategray; order: 9; }
+.dado-10 { background-color: darkgreen; order:10;}
+
+footer {
+    margin: 10px auto;
+}
+
+.btn-container {
+    display: flex;
+    margin: 5px auto;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 100%;
+}
+
+select, button {
+    margin: 10px;
+    max-width: 100%;
+    max-height: 500px;
+    width: auto;
+    height: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+#algoritmoSelecionado {
+    border: 2px solid violet;
+    background-color: blueviolet;
+    color: aliceblue;
+}
+
+.embaralhar {
+    background-color: darkblue;
+    color: aliceblue;
+    border: 2px solid blue;
+}
+
+.executar {
+    background-color: darkgreen;
+    color: aliceblue;
+    border: 2px solid green;
+}
+
+#algoritmoSelecionado:hover {
+    background-color: darkorchid;
+}
+
+.embaralhar:hover {
+    background-color: darkcyan;
+}
+
+.executar:hover {
+    background-color: chartreuse;
+}
+
+@media (max-width: 500px) and (max-height: 500px) {
+    body {
+        background-color: #c0c0c0;
+    }
+
+    .btn-container {
+        flex-direction: row;
+    }
+
+    select, button {
+        margin: 5px;
+    }
+}

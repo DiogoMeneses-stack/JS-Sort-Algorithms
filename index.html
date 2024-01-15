@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Algoritmos De Ordenação</title>
+</head>
+
+<body>
+    <header>
+        <h2>Estruturas de Ordenação</h2>
+    </header>
+    <section>
+        <div class="container-elementos">
+            <div class="dado dado-00">00</div>
+            <div class="dado dado-01">01</div>
+            <div class="dado dado-02">02</div>
+            <div class="dado dado-03">03</div>
+            <div class="dado dado-04">04</div>
+            <div class="dado dado-05">05</div>
+            <div class="dado dado-06">06</div>
+            <div class="dado dado-07">07</div>
+            <div class="dado dado-08">08</div>
+            <div class="dado dado-09">09</div>
+            <div class="dado dado-10">10</div>
+        </div>
+    </section>
+    <footer>
+        <div class="btn-container">
+            <select name="algoritmoDeOrdenacao" id="algoritmoSelecionado">
+                <option value="selecionar">Selecione</option>
+                <option value="bubble-sort">Bubble Sort</option>
+                <option value="insertion-sort">Insertion Sort</option>
+                <option value="raddix-Sort">Raddix Sort</option>
+                <option value="merge-sort">Merge Sort</option>
+                <option value="quick-sort">Quick Sort</option>
+                <option value="selection-sort">Selection Sort</option>
+            </select>
+            <button class="embaralhar" onclick="embaralhar()">Embaralhar</button>
+            <button class="executar" onclick="executarAlgoritmo()">Executar</button>
+        </div>
+    </footer>
+    <script src="algoritmos.js"></script>
+</body>
+
+</html>
